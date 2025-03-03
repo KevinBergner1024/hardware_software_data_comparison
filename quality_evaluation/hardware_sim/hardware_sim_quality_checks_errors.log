@@ -1,0 +1,297 @@
+FILTER MISBEHAVIOR INCLUDED IN WSAL QUALITY CHECK LOGS SCRIPT 1.3
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 9 [41-45]_SimUser001.log
+08/11/2024 23:23:10 - INFO - |copy_net_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 23:23:12 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+08/11/2024 23:23:12 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 23:23:12 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-12 05:07:54.807292800|last event timestamp of complete wal sequence-2024-01-12 05:15:22.090831600|sim23 log start time-12/01/2024 05:07:22:711000|sim23 log end time-12/01/2024 05:17:27:715000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 9 [41-45]_SimUser001.log
+09/11/2024 00:04:11 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 00:04:14 - DEBUG - |detailed quality check info|files created count of filtered row entries|998 out of 1000 entry/entries expected
+09/11/2024 00:04:14 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 00:04:14 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-12 12:38:41.791513700|last event timestamp of complete wal sequence-2024-01-12 12:40:53.680680800|sim23 log start time-12/01/2024 12:38:10:185000|sim23 log end time-12/01/2024 12:42:24:150000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser002.log
+09/11/2024 13:44:38 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 13:44:40 - DEBUG - |detailed quality check info|files created count of filtered row entries|666 out of 1000 entry/entries expected
+09/11/2024 13:44:40 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 13:44:40 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 00:49:27.456143300|last event timestamp of complete wal sequence-2023-12-27 00:55:12.979022100|sim23 log start time-27/12/2023 00:48:55:980000|sim23 log end time-27/12/2023 00:57:46:810000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser002.log
+09/11/2024 14:26:16 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 14:26:19 - DEBUG - |detailed quality check info|files created count of filtered row entries|970 out of 1000 entry/entries expected
+09/11/2024 14:26:19 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 14:26:19 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 08:44:00.194381600|last event timestamp of complete wal sequence-2023-12-27 08:50:33.158064100|sim23 log start time-27/12/2023 08:43:28:743000|sim23 log end time-27/12/2023 08:52:31:430000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser002.log
+09/11/2024 15:41:19 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 15:41:21 - DEBUG - |detailed quality check info|files created count of filtered row entries|770 out of 1000 entry/entries expected
+09/11/2024 15:41:21 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 15:41:21 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-28 00:54:30.569716100|last event timestamp of complete wal sequence-2023-12-28 01:00:15.518507|sim23 log start time-28/12/2023 00:53:59:620000|sim23 log end time-28/12/2023 01:02:19:732000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser002.log
+10/11/2024 06:47:23 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+10/11/2024 06:47:26 - DEBUG - |detailed quality check info|files created count of filtered row entries|992 out of 1000 entry/entries expected
+10/11/2024 06:47:26 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+10/11/2024 06:47:26 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-23 20:19:58.175961200|last event timestamp of complete wal sequence-2024-01-23 20:22:07.281497600|sim23 log start time-23/01/2024 20:19:26:504000|sim23 log end time-23/01/2024 20:24:20:490000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser002.log
+10/11/2024 07:24:55 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+10/11/2024 07:24:58 - DEBUG - |detailed quality check info|files created count of filtered row entries|998 out of 1000 entry/entries expected
+10/11/2024 07:24:58 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+10/11/2024 07:24:58 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 06:01:57.431963900|last event timestamp of complete wal sequence-2024-01-24 06:04:07.453463400|sim23 log start time-24/01/2024 06:01:25:818000|sim23 log end time-24/01/2024 06:06:31:545000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser002.log
+10/11/2024 08:43:19 - INFO - |copy_local_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+10/11/2024 08:43:22 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+10/11/2024 08:43:22 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+10/11/2024 08:43:22 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 21:05:35.207827300|last event timestamp of complete wal sequence-2024-01-24 21:08:00.700595600|sim23 log start time-24/01/2024 21:05:03:678000|sim23 log end time-24/01/2024 21:10:12:593000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 10 [46-50]_SimUser001.log
+09/11/2024 03:20:49 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 03:20:52 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 03:20:52 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 03:20:52 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-18 11:09:08.207029200|last event timestamp of complete wal sequence-2024-01-18 11:11:21.212672900|sim23 log start time-18/01/2024 11:08:36:311000|sim23 log end time-18/01/2024 11:13:10:182000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 10 [46-50]_SimUser001.log
+09/11/2024 04:02:31 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 04:02:33 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 04:02:33 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 04:02:33 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-18 19:00:48.965430600|last event timestamp of complete wal sequence-2024-01-18 19:03:05.893718|sim23 log start time-18/01/2024 19:00:17:321000|sim23 log end time-18/01/2024 19:05:21:262000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 10 [46-50]_SimUser004.log
+11/11/2024 16:57:51 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+11/11/2024 16:57:54 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+11/11/2024 16:57:54 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+11/11/2024 16:57:54 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-17 19:46:15.291221400|last event timestamp of complete wal sequence-2024-01-17 19:48:27.848375300|sim23 log start time-17/01/2024 19:45:43:629000|sim23 log end time-17/01/2024 19:50:41:394000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser003.log
+11/11/2024 05:12:15 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+11/11/2024 05:12:17 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+11/11/2024 05:12:17 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+11/11/2024 05:12:17 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 13:44:26.679593200|last event timestamp of complete wal sequence-2024-01-24 13:46:37.045542500|sim23 log start time-24/01/2024 13:43:54:957000|sim23 log end time-24/01/2024 13:48:26:343000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser001.log
+09/11/2024 09:58:38 - INFO - |copy_local_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 09:58:42 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 09:58:42 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 09:58:42 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-23 19:50:50.936481300|last event timestamp of complete wal sequence-2024-01-23 19:52:53.228072500|sim23 log start time-23/01/2024 19:50:19:409000|sim23 log end time-23/01/2024 19:54:58:141000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser001.log
+09/11/2024 10:36:52 - INFO - |copy_local_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 10:36:55 - DEBUG - |detailed quality check info|files created count of filtered row entries|983 out of 1000 entry/entries expected
+09/11/2024 10:36:55 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 10:36:55 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 05:32:44.447146900|last event timestamp of complete wal sequence-2024-01-24 05:34:54.384794200|sim23 log start time-24/01/2024 05:32:12:957000|sim23 log end time-24/01/2024 05:36:37:424000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser001.log
+09/11/2024 11:14:05 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 11:14:07 - DEBUG - |detailed quality check info|files created count of filtered row entries|786 out of 1000 entry/entries expected
+09/11/2024 11:14:07 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 11:14:07 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 13:21:23.611670500|last event timestamp of complete wal sequence-2024-01-24 13:27:46.578814|sim23 log start time-24/01/2024 13:20:52:620000|sim23 log end time-24/01/2024 13:30:08:681000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser001.log
+09/11/2024 11:51:56 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 11:51:58 - DEBUG - |detailed quality check info|files created count of filtered row entries|770 out of 1000 entry/entries expected
+09/11/2024 11:51:58 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 11:51:58 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 21:11:05.678746500|last event timestamp of complete wal sequence-2024-01-24 21:16:58.394069200|sim23 log start time-24/01/2024 21:10:34:630000|sim23 log end time-24/01/2024 21:18:28:712000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 9 [41-45]_SimUser004.log
+11/11/2024 15:48:32 - INFO - |copy_net_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+11/11/2024 15:48:35 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+11/11/2024 15:48:35 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+11/11/2024 15:48:35 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-12 20:33:20.315965900|last event timestamp of complete wal sequence-2024-01-12 20:40:31.354873600|sim23 log start time-12/01/2024 20:32:46:994000|sim23 log end time-12/01/2024 20:42:37:241000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 9 [41-45]_SimUser004.log
+11/11/2024 16:25:26 - INFO - |copy_net_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+11/11/2024 16:25:29 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+11/11/2024 16:25:29 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+11/11/2024 16:25:29 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-13 04:22:34.581235|last event timestamp of complete wal sequence-2024-01-13 04:30:04.315702700|sim23 log start time-13/01/2024 04:22:02:741000|sim23 log end time-13/01/2024 04:32:16:527000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 11 [51-55]_SimUser001.log
+09/11/2024 06:37:01 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 06:37:04 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 06:37:04 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 06:37:04 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-20 11:50:06.515452800|last event timestamp of complete wal sequence-2024-01-20 11:52:22.442193100|sim23 log start time-20/01/2024 11:49:34:573000|sim23 log end time-20/01/2024 11:53:52:438000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 11 [51-55]_SimUser001.log
+09/11/2024 07:18:28 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 07:18:30 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 07:18:30 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 07:18:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-20 19:30:19.244593100|last event timestamp of complete wal sequence-2024-01-20 19:32:31.288133100|sim23 log start time-20/01/2024 19:29:47:538000|sim23 log end time-20/01/2024 19:34:32:880000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 12 [56-60]_SimUser004.log
+12/11/2024 02:06:23 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+12/11/2024 02:06:27 - DEBUG - |detailed quality check info|files created count of filtered row entries|993 out of 1000 entry/entries expected
+12/11/2024 02:06:27 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+12/11/2024 02:06:27 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-24 13:45:22.575329100|last event timestamp of complete wal sequence-2024-01-24 13:47:36.210341800|sim23 log start time-24/01/2024 13:44:50:881000|sim23 log end time-24/01/2024 13:49:57:882000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 11 [51-55]_SimUser003.log
+10/11/2024 23:18:55 - INFO - |encrypt_decrypt_10MB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+10/11/2024 23:18:55 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+10/11/2024 23:18:55 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-19/01/2024 23:21:13:790000|sim23 log end time:-19/01/2024 23:21:39:820000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 11 [51-55]_SimUser003.log
+11/11/2024 02:02:08 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+11/11/2024 02:02:11 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+11/11/2024 02:02:11 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+11/11/2024 02:02:11 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-21 02:56:16.114006800|last event timestamp of complete wal sequence-2024-01-21 03:02:28.344383900|sim23 log start time-21/01/2024 02:55:44:484000|sim23 log end time-21/01/2024 03:05:04:594000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 15:30:56 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 15:30:58 - DEBUG - |detailed quality check info|files created count of filtered row entries|642 out of 1000 entry/entries expected
+08/11/2024 15:30:58 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|809 out of 1000 entry/entries expected
+08/11/2024 15:30:58 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-26 16:46:52.636368200|last event timestamp of complete wal sequence-2023-12-26 16:53:13.514912900|sim23 log start time-26/12/2023 16:46:21:116000|sim23 log end time-26/12/2023 16:55:43:344000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 16:06:30 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 16:06:33 - DEBUG - |detailed quality check info|files created count of filtered row entries|935 out of 1000 entry/entries expected
+08/11/2024 16:06:33 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 16:06:33 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 00:48:53.806334|last event timestamp of complete wal sequence-2023-12-27 00:55:00.514799700|sim23 log start time-27/12/2023 00:48:22:199000|sim23 log end time-27/12/2023 00:56:58:758000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 16:06:34 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 16:06:37 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+08/11/2024 16:06:37 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 16:06:37 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 01:10:53.822964900|last event timestamp of complete wal sequence-2023-12-27 01:13:06.036848600|sim23 log start time-27/12/2023 01:10:22:600000|sim23 log end time-27/12/2023 01:15:03:430000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 16:43:04 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 16:43:06 - DEBUG - |detailed quality check info|files created count of filtered row entries|711 out of 1000 entry/entries expected
+08/11/2024 16:43:06 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 16:43:06 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 08:43:31.832332600|last event timestamp of complete wal sequence-2023-12-27 08:49:30.351868400|sim23 log start time-27/12/2023 08:43:00:273000|sim23 log end time-27/12/2023 08:51:15:448000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 17:20:22 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 17:20:24 - DEBUG - |detailed quality check info|files created count of filtered row entries|914 out of 1000 entry/entries expected
+08/11/2024 17:20:24 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 17:20:24 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-27 16:48:03.173964400|last event timestamp of complete wal sequence-2023-12-27 16:54:28.591799400|sim23 log start time-27/12/2023 16:47:31:776000|sim23 log end time-27/12/2023 16:56:38:443000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 2 [6-10]_SimUser001.log
+08/11/2024 17:57:27 - INFO - |copy_local_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 17:57:28 - DEBUG - |detailed quality check info|files created count of filtered row entries|724 out of 1000 entry/entries expected
+08/11/2024 17:57:28 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 17:57:28 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2023-12-28 00:53:53.669738700|last event timestamp of complete wal sequence-2023-12-28 00:59:40.785020|sim23 log start time-28/12/2023 00:53:22:940000|sim23 log end time-28/12/2023 01:01:24:149000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 9 [41-45]_SimUser002.log
+09/11/2024 21:00:11 - INFO - |copy_net_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+09/11/2024 21:00:14 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+09/11/2024 21:00:14 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+09/11/2024 21:00:14 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-12 12:39:42.768264900|last event timestamp of complete wal sequence-2024-01-12 12:41:50.751359900|sim23 log start time-12/01/2024 12:39:11:192000|sim23 log end time-12/01/2024 12:43:20:914000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:09 - INFO - |copy_local_to_local_1_files_each_1GB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files created count of filtered row entries|2 out of 1 entry/entries expected
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|2 out of 1 entry/entries expected
+08/11/2024 19:12:09 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:23:26.266112800|last event timestamp of complete wal sequence-2024-01-09 07:23:51.966215100|sim23 log start time-09/01/2024 07:22:54:668000|sim23 log end time-09/01/2024 07:24:24:103000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:09 - INFO - |copy_local_to_local_10_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files created count of filtered row entries|20 out of 10 entry/entries expected
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|20 out of 10 entry/entries expected
+08/11/2024 19:12:09 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:25:58.051335100|last event timestamp of complete wal sequence-2024-01-09 07:26:08.590121700|sim23 log start time-09/01/2024 07:25:26:536000|sim23 log end time-09/01/2024 07:26:41:185000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:09 - INFO - |copy_local_to_local_10_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files created count of filtered row entries|20 out of 10 entry/entries expected
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|20 out of 10 entry/entries expected
+08/11/2024 19:12:09 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:28:15.191429|last event timestamp of complete wal sequence-2024-01-09 07:28:26.882533800|sim23 log start time-09/01/2024 07:27:43:684000|sim23 log end time-09/01/2024 07:28:59:485000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:09 - INFO - |copy_local_to_local_100_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files created count of filtered row entries|200 out of 100 entry/entries expected
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|200 out of 100 entry/entries expected
+08/11/2024 19:12:09 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:30:33.548626100|last event timestamp of complete wal sequence-2024-01-09 07:30:49.122022600|sim23 log start time-09/01/2024 07:30:02:440000|sim23 log end time-09/01/2024 07:31:26:915000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:09 - INFO - |copy_local_to_local_100_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files created count of filtered row entries|200 out of 100 entry/entries expected
+08/11/2024 19:12:09 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|200 out of 100 entry/entries expected
+08/11/2024 19:12:09 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:33:00.884323300|last event timestamp of complete wal sequence-2024-01-09 07:33:36.609729400|sim23 log start time-09/01/2024 07:32:29:416000|sim23 log end time-09/01/2024 07:34:14:421000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:12 - INFO - |copy_local_to_local_1000_files_each_200KB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 19:12:14 - DEBUG - |detailed quality check info|files created count of filtered row entries|1361 out of 1000 entry/entries expected
+08/11/2024 19:12:14 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 19:12:14 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-09 07:35:48.475245200|last event timestamp of complete wal sequence-2024-01-09 07:37:50.601831400|sim23 log start time-09/01/2024 07:35:16:984000|sim23 log end time-09/01/2024 07:39:34:975000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_copy_200KB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:23:39:390000|sim23 log end time:-09/01/2024 10:24:43:775000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_encrypt_200KB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:25:46:292000|sim23 log end time:-09/01/2024 10:26:49:688000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_decrypt_200KB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:27:52:293000|sim23 log end time:-09/01/2024 10:28:55:822000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_delete_200KB_10_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:29:58:403000|sim23 log end time-09/01/2024 10:31:01:811000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_copy_200KB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:32:04:376000|sim23 log end time:-09/01/2024 10:33:08:733000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_encrypt_200KB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:34:11:325000|sim23 log end time:-09/01/2024 10:35:16:644000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_decrypt_200KB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:36:19:251000|sim23 log end time:-09/01/2024 10:37:24:240000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_delete_200KB_100_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:38:26:826000|sim23 log end time-09/01/2024 10:39:30:168000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_copy_200KB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:40:32:764000|sim23 log end time:-09/01/2024 10:41:44:622000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_encrypt_200KB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:42:47:177000|sim23 log end time:-09/01/2024 10:44:10:290000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_decrypt_200KB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:45:12:553000|sim23 log end time:-09/01/2024 10:46:35:874000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_delete_200KB_1000_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:47:38:547000|sim23 log end time-09/01/2024 10:48:46:990000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_copy_10MB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:49:48:505000|sim23 log end time:-09/01/2024 10:50:52:866000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_encrypt_10MB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:51:55:409000|sim23 log end time:-09/01/2024 10:53:00:140000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_decrypt_10MB_10_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 10 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:54:02:584000|sim23 log end time:-09/01/2024 10:55:07:228000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_delete_10MB_10_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:56:09:804000|sim23 log end time-09/01/2024 10:57:13:330000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_copy_10MB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 10:58:15:624000|sim23 log end time:-09/01/2024 10:59:34:792000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_encrypt_10MB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:00:37:341000|sim23 log end time:-09/01/2024 11:01:55:782000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:30 - INFO - |encrypt_decrypt_10MB_100_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:30 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 100 entry/entries expected
+08/11/2024 19:12:30 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:02:58:430000|sim23 log end time:-09/01/2024 11:04:15:220000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_delete_10MB_100_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:05:17:807000|sim23 log end time-09/01/2024 11:06:21:279000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_copy_10MB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:07:23:932000|sim23 log end time:-09/01/2024 11:11:29:778000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_encrypt_10MB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:12:32:168000|sim23 log end time:-09/01/2024 11:18:07:426000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_decrypt_10MB_1000_files|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1000 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:19:12:101000|sim23 log end time:-09/01/2024 11:23:15:865000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_delete_10MB_1000_files|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:24:18:718000|sim23 log end time-09/01/2024 11:25:27:745000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_copy_1GB_1_file|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:26:30:254000|sim23 log end time:-09/01/2024 11:27:45:547000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_encrypt_1GB_1_file|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:28:48:216000|sim23 log end time:-09/01/2024 11:30:17:512000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_decrypt_1GB_1_file|method wal_quality_evaluation.quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt subattack - count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:31:20:114000|sim23 log end time:-09/01/2024 11:32:43:891000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 19:12:31 - INFO - |encrypt_delete_1GB_1_file|method wal_quality_evaluation.quality_check_encrypt_delete started
+08/11/2024 19:12:31 - DEBUG - |detailed quality check info|encrypt delete count of filtered row entries|0 out of 1 entry/entries expected
+08/11/2024 19:12:31 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-empty dataframe|last event timestamp of complete wal sequence-empty dataframe|sim23 log start time-09/01/2024 11:33:46:556000|sim23 log end time-09/01/2024 11:34:49:933000
+/home/kevin/final_host_data_set_quality_evaluation/hardware_sim/hardware_sim23_Hardware Sim 23 Run 8 [36-40]_SimUser001.log
+08/11/2024 22:03:46 - INFO - |copy_net_to_local_1000_files_each_10MB_delete_files_after_copy_included|method wal_quality_evaluation.quality_check_copy_local_to_local_and_net_to_local started
+08/11/2024 22:03:49 - DEBUG - |detailed quality check info|files created count of filtered row entries|999 out of 1000 entry/entries expected
+08/11/2024 22:03:49 - DEBUG - |detailed quality check info|files deleted count of filtered row entries|1000 out of 1000 entry/entries expected
+08/11/2024 22:03:49 - ERROR - |security event sequence order check was successful-False|security event sequence occured in pre-defined count-False|first event timestamp of complete wal sequence-2024-01-10 12:41:31.100410400|last event timestamp of complete wal sequence-2024-01-10 12:48:17.229894400|sim23 log start time-10/01/2024 12:40:59:450000|sim23 log end time-10/01/2024 12:50:18:232000
