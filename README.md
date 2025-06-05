@@ -2,4 +2,4 @@
 
 The following codebase is part of the paper [Implications of Applying Emulation Data to Machine Learning-Based Intrusion Detection Systems](https://www.hs-coburg.de/forschen/cidds-coburg-intrusion-detection-data-sets/). 
 
-Python 3.10.12 Version
+Python 3.9.11 Version
