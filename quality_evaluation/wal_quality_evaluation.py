@@ -9,8 +9,8 @@ import configparser
 NAME = "Windows Audit Logs Quality Evaluation Script"
 VERSION = "1.11"
 CMD_MODE_ENABLED = False
-SIM_USER_DUMMY_TAG = "SIM_USER_DUMMY"
 
+SIM_USER_DUMMY_TAG = "SIM_USER_DUMMY"
 LABEL_WAL_FEATURE_MAPPING = {
     # process name & count of files included in general encrypt attack
     'encrypt_copy_200KB_10_files' : ['C:\\Windows\\System32\\xcopy.exe', 10],
@@ -51,7 +51,7 @@ LABEL_WAL_FEATURE_MAPPING = {
 	'copy_net_to_local_1000_files_each_10MB_delete_files_after_copy_included' : ['C:\\localstorage\\sim23_dest\\mittel\\viel', 1000]
 }
 
-def load_config_asset(config_section:str, config_key:str, config_system_path:pathlib.Path=pathlib.Path(__file__).with_name('config.ini')):
+def load_config_asset(config_section: str, config_key: str, config_system_path: pathlib.Path = pathlib.Path(__file__).with_name('config.ini')):
     """load configuration content from config file
 
     Args:
@@ -72,19 +72,14 @@ def load_config_asset(config_section:str, config_key:str, config_system_path:pat
 
     return config_key_value
 
-def quality_check_programming_behavior_java(wal_dataframe:pd.DataFrame, start_timestamp_programming_behavior:datetime.datetime, end_timestamp_programming_behavior:datetime.datetime,
-                                            delete_file_initially_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', delete_file_initially_event_id:str='4663', delete_file_initially_object_name:str='C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', delete_file_initially_access_type:str='%%1537',
-                                            create_java_template_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_java_template_file_event_id:str='4663', create_java_template_file_object_name:str='C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', create_java_template_file_access_type:str='%%4417',
-                                            create_java_file_loc_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_java_file_loc_event_id:str='4663', create_java_file_loc_object_name:str='C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', create_java_file_loc_access_type:str='%%4417',
-                                            compile_delete_class_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', compile_delete_class_file_event_id:str='4663', compile_delete_class_file_object_name:str='C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.class', compile_delete_class_file_access_type:str='%%1537',
-                                            compile_create_class_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\javac.exe', compile_create_class_file_event_id:str='4663', compile_create_class_file_object_name:str='C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.class', compile_create_class_file_access_type:str='%%4417',
-                                            execute_sim23_class_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\java.exe', execute_sim23_class_file_event_id:str='4663', execute_sim23_class_file_object_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\server\\jvm.dll', execute_sim23_class_file_access_type:str='%%4421',
-                                            log_wal_quality_evaluation:bool=True, sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None, sim_user_of_interest:str=None):
-    
-     #C:\Users\SimUser001\scoop\apps\openjdk\21.0.1-12\bin\javac.exe  (new one)
-     #C:\\Users\\SimUser001\\scoop\\apps\\openjdk\\20.0.1-9\\bin\\javac.exe (older one)
-     # for softsim SimUser003 C:\Users\SimUser003\scoop\apps\openjdk\21.0.2-13\bin\java.exe -> change input parameter in automated wsal evaluation wal_general_quality_check_handler_sim23_log_based method name
-
+def quality_check_programming_behavior_java(wal_dataframe: pd.DataFrame, start_timestamp_programming_behavior: datetime.datetime, end_timestamp_programming_behavior: datetime.datetime,
+                                            delete_file_initially_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', delete_file_initially_event_id: str = '4663', delete_file_initially_object_name: str = 'C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', delete_file_initially_access_type: str = '%%1537',
+                                            create_java_template_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_java_template_file_event_id: str = '4663', create_java_template_file_object_name: str = 'C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', create_java_template_file_access_type: str = '%%4417',
+                                            create_java_file_loc_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_java_file_loc_event_id: str = '4663', create_java_file_loc_object_name: str = 'C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.java', create_java_file_loc_access_type: str = '%%4417',
+                                            compile_delete_class_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', compile_delete_class_file_event_id: str = '4663', compile_delete_class_file_object_name: str = 'C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.class', compile_delete_class_file_access_type: str = '%%1537',
+                                            compile_create_class_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\javac.exe', compile_create_class_file_event_id: str = '4663', compile_create_class_file_object_name: str = 'C:\\workspace\\Unmanaged\\JavaSim23\\Sim23.class', compile_create_class_file_access_type: str = '%%4417',
+                                            execute_sim23_class_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\java.exe', execute_sim23_class_file_event_id: str = '4663', execute_sim23_class_file_object_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.1-12\\bin\\server\\jvm.dll', execute_sim23_class_file_access_type: str = '%%4421',
+                                            log_wal_quality_evaluation: bool = True, sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None, sim_user_of_interest: str = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for java programming behavior sim23
 
     Args:
@@ -198,7 +193,7 @@ def quality_check_programming_behavior_java(wal_dataframe:pd.DataFrame, start_ti
         wal_pattern_programming_java = pd.concat([wal_pattern_programming_java, execute_sim23_class_file_sub_dataframe], axis=0, ignore_index= True).sort_values(by='SYSTEM_TimeCreated', ignore_index=True)
 
         #bot subbehavior: create java template & fill java template with loc, have same event data features -> due to this both queries aboth included the events of the other behavior as well -> drop duplicates
-        # granularity based on timestamp feature values: 2023-12-26 20:02:20.906489800 -> the same timestamps should not occur in this order
+        # granularity based on timestamp feature values: 2023-12-26 20:02:20.906489800 -> the same timestamps do not occur in this order
         wal_pattern_programming_java_without_duplicates = wal_pattern_programming_java.drop_duplicates(ignore_index=True)
         
         security_event_seuqence_to_check = wal_pattern_programming_java_without_duplicates[['EVENTDATA_ProcessName', 'SYSTEM_EventID', 'EVENTDATA_ObjectName']].values.tolist()
@@ -283,12 +278,12 @@ def quality_check_programming_behavior_java(wal_dataframe:pd.DataFrame, start_ti
 
     return quality_evaluation_results
     
-def quality_check_programming_behavior_python(wal_dataframe:pd.DataFrame, start_timestamp_programming_behavior:datetime.datetime, end_timestamp_programming_behavior:datetime.datetime,
-                                              delete_file_initially_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', delete_file_initially_event_id:str='4663', delete_file_initially_object_name:str='C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', delete_file_initially_access_type:str='%%1537',
-                                              create_python_template_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_python_template_file_event_id:str='4663', create_python_template_file_object_name:str='C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', create_python_template_file_access_type:str='%%4417',
-                                              create_python_file_loc_content_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_python_file_loc_content_event_id:str='4663', create_python_file_loc_content_object_name:str='C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', create_python_file_loc_content_access_type:str='%%4417',  
-                                              execute_python_file_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', execute_python_file_event_id:str='4663', execute_python_file_object_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python311.dll', execute_python_file_access_type:str='%%4421',
-                                              log_wal_quality_evaluation:bool=True, sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None, sim_user_of_interest:str=None):
+def quality_check_programming_behavior_python(wal_dataframe: pd.DataFrame, start_timestamp_programming_behavior: datetime.datetime, end_timestamp_programming_behavior: datetime.datetime,
+                                              delete_file_initially_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', delete_file_initially_event_id: str = '4663', delete_file_initially_object_name: str = 'C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', delete_file_initially_access_type: str = '%%1537',
+                                              create_python_template_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_python_template_file_event_id: str = '4663', create_python_template_file_object_name: str = 'C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', create_python_template_file_access_type: str = '%%4417',
+                                              create_python_file_loc_content_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', create_python_file_loc_content_event_id: str = '4663', create_python_file_loc_content_object_name: str = 'C:\\workspace\\Unmanaged\\PythonSim23\\sim23.py', create_python_file_loc_content_access_type: str = '%%4417',  
+                                              execute_python_file_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', execute_python_file_event_id: str = '4663', execute_python_file_object_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python311.dll', execute_python_file_access_type: str = '%%4421',
+                                              log_wal_quality_evaluation: bool = True, sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None, sim_user_of_interest: str = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for python programming behavior sim23
 
     Args:
@@ -450,10 +445,10 @@ def quality_check_programming_behavior_python(wal_dataframe:pd.DataFrame, start_
 
     return quality_evaluation_results
     
-def quality_check_copy_local_to_local_and_net_to_local(complete_copy_behavior_object_name:str, number_of_files_to_copy:int, wal_dataframe:pd.DataFrame, start_time_copy_behavior:datetime.datetime, end_time_copy_behavior:datetime.datetime,
-                                                       complete_copy_behavior_process_name:str='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', complete_copy_behavior_event_id:str='4663',
-                                                       create_file_while_copy_to_target_dir_access_type:str='%%4417', delete_files_when_copy_to_target_dir_done_access_type:str='%%1537',
-                                                       log_wal_quality_evaluation:bool=True, sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None, sim_user_of_interest:str=None):
+def quality_check_copy_local_to_local_and_net_to_local(complete_copy_behavior_object_name: str, number_of_files_to_copy: int, wal_dataframe: pd.DataFrame, start_time_copy_behavior: datetime.datetime, end_time_copy_behavior: datetime.datetime,
+                                                       complete_copy_behavior_process_name: str = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe', complete_copy_behavior_event_id: str = '4663',
+                                                       create_file_while_copy_to_target_dir_access_type: str = '%%4417', delete_files_when_copy_to_target_dir_done_access_type: str = '%%1537',
+                                                       log_wal_quality_evaluation: bool = True, sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None, sim_user_of_interest: str = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for copy file (local & net) behavior sim23
 
     Args:
@@ -564,9 +559,9 @@ def quality_check_copy_local_to_local_and_net_to_local(complete_copy_behavior_ob
 
     return quality_evaluation_results
 
-def quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(number_of_files_to_copy_or_encrypt_or_decrypt:int, wal_dataframe:pd.DataFrame, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt:datetime.datetime, end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt:datetime.datetime,
-                           encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name:str, encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type:str, encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name:str='C:\\Windows\\System32\\xcopy.exe', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_event_id:str='4663',
-                           log_wal_quality_evaluation:bool=True, sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None, sim_user_of_interest:str=None):
+def quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(number_of_files_to_copy_or_encrypt_or_decrypt: int, wal_dataframe: pd.DataFrame, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt: datetime.datetime, end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt: datetime.datetime,
+                                                                     encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name: str, encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type: str, encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name: str= 'C:\\Windows\\System32\\xcopy.exe', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_event_id: str = '4663',
+                                                                     log_wal_quality_evaluation: bool = True, sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None, sim_user_of_interest: str = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for encrypt copy, encrypt, decrypt behavior sim23
 
     Args:
@@ -661,9 +656,9 @@ def quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(number_of_f
           
     return quality_evaluation_results
 
-def quality_check_encrypt_delete(wal_dataframe:pd.DataFrame, start_time_encrypt_delete:datetime.datetime, end_time_encrypt_delete:datetime.datetime,
-                           encrypt_delete_object_name:str='C:\\localstorage\\sim23_encrypt_dest', encrypt_delete_access_type:str='%%1537', encrypt_delete_process_name:str='C:\\Windows\\System32\\cmd.exe', encrypt_delete_event_id:str='4663',
-                           log_wal_quality_evaluation:bool=True, sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None):
+def quality_check_encrypt_delete(wal_dataframe: pd.DataFrame, start_time_encrypt_delete: datetime.datetime, end_time_encrypt_delete: datetime.datetime, 
+                                 encrypt_delete_object_name: str = 'C:\\localstorage\\sim23_encrypt_dest', encrypt_delete_access_type: str = '%%1537', encrypt_delete_process_name: str = 'C:\\Windows\\System32\\cmd.exe', encrypt_delete_event_id: str = '4663',
+                                 log_wal_quality_evaluation: bool = True, sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for encrypt delete behavior sim23
 
     Args:
@@ -741,9 +736,9 @@ def quality_check_encrypt_delete(wal_dataframe:pd.DataFrame, start_time_encrypt_
 
     return quality_evaluation_results
 
-def quality_check_mailing_with_attachment_and_save(wal_dataframe:pd.DataFrame, start_time_mailing:datetime.datetime, end_time_mailing:datetime.datetime, mailing_with_attachment_and_save_process_name:str ='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe',
-                                                   mailing_with_attachment_and_save_event_id:str='4663', mailing_with_attachment_and_save_object_name:str= 'C:\\localstorage\\attachment', mailing_with_attachment_and_save_access_type:str='%%4417', log_wal_quality_evaluation:bool=True,
-                                                   sim23_log_behavior_label:str="UNDEFINED", logging_file_path:pathlib.Path=None, sim_user_of_interest:str=None):
+def quality_check_mailing_with_attachment_and_save(wal_dataframe: pd.DataFrame, start_time_mailing: datetime.datetime, end_time_mailing: datetime.datetime, mailing_with_attachment_and_save_process_name: str ='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\python\\3.11.3\\python.exe',
+                                                   mailing_with_attachment_and_save_event_id: str = '4663', mailing_with_attachment_and_save_object_name: str = 'C:\\localstorage\\attachment', mailing_with_attachment_and_save_access_type: str = '%%4417', log_wal_quality_evaluation: bool = True,
+                                                   sim23_log_behavior_label: str = "UNDEFINED", logging_file_path: pathlib.Path = None, sim_user_of_interest: str = None):
     """check if windows security events occur in specific security event order (based on implemented simulation behavior) & the count of specific events machtes the sim23 log timestamps => for encrypt delete behavior sim23
 
     Args:
@@ -822,7 +817,7 @@ def quality_check_mailing_with_attachment_and_save(wal_dataframe:pd.DataFrame, s
 
     return quality_evaluation_results
 
-def wal_general_quality_check_handler_sim23_log_based(sim23_logs:list, audit_data:pd.DataFrame, logging_path:pathlib.Path=None, sim_user_of_interest:str=None, timezone:str=None):
+def wal_general_quality_check_handler_sim23_log_based(sim23_logs: list, audit_data: pd.DataFrame, logging_path: pathlib.Path=None, sim_user_of_interest: str = None, timezone: str = None):
     """automated quality evaluation processing based on collected windows audit log files (converted) & sim 23 logs for each iteration
 
     Args:
@@ -835,52 +830,42 @@ def wal_general_quality_check_handler_sim23_log_based(sim23_logs:list, audit_dat
     Returns:
         int: returns the count of done quality checks for Windows security audit logs
     """
-    # count of done quality checks initiated by the handler method
     done_quality_checks = 0
     if(sim23_logs):
         for idx, log_entry in enumerate(sim23_logs):
             data = audit_data[(audit_data['SYSTEM_TimeCreated'] >= log_entry[0]) & (audit_data['SYSTEM_TimeCreated'] <= log_entry[1])].copy()
-            # if data is empty it will be logged while doing the quality checks
             if('encrypt' in log_entry[-1]):
                 # differentiate between encrypt copy, encrypt, decrypt, delete attack steps
                 if('copy' in log_entry[-1]):
-                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name='C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type='%%4417', number_of_files_to_copy_or_encrypt_or_decrypt=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1],wal_dataframe=data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name = 'C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type = '%%4417', number_of_files_to_copy_or_encrypt_or_decrypt = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1],wal_dataframe = data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt = log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt = log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
                 elif('decrypt' in log_entry[-1]):
-                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name='C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type='%%4417', number_of_files_to_copy_or_encrypt_or_decrypt=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1],wal_dataframe=data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name = 'C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type = '%%4417', number_of_files_to_copy_or_encrypt_or_decrypt = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1], wal_dataframe = data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt= log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt= log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
                 elif('delete' in log_entry[-1]):
-                    quality_check_encrypt_delete(sim23_log_behavior_label= log_entry[-1], wal_dataframe=data, start_time_encrypt_delete=log_entry[0], end_time_encrypt_delete=log_entry[1], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_encrypt_delete(sim23_log_behavior_label = log_entry[-1], wal_dataframe = data, start_time_encrypt_delete = log_entry[0], end_time_encrypt_delete = log_entry[1], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
                 elif('encrypt_encrypt' in log_entry[-1]):
-                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name='C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type='%%4417', number_of_files_to_copy_or_encrypt_or_decrypt=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1],wal_dataframe=data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt=log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_object_name = 'C:\\localstorage\\sim23_encrypt_dest', encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_access_type = '%%4417', number_of_files_to_copy_or_encrypt_or_decrypt = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1], wal_dataframe = data, start_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt = log_entry[0], end_time_quality_check_encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt = log_entry[1], encrypt_copy_or_encrypt_encrypt_or_encrypt_decrypt_process_name = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
             elif('mailing' in log_entry[-1]):
                 # if attachment gets downloaded while simulating mailing behavior
                 if('and_save'in log_entry[-1]):
-                    quality_check_mailing_with_attachment_and_save(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], wal_dataframe=data, start_time_mailing=log_entry[0], end_time_mailing=log_entry[1], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_mailing_with_attachment_and_save(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], wal_dataframe = data, start_time_mailing = log_entry[0], end_time_mailing = log_entry[1], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
             elif('programming' in log_entry[-1]):
                 if('java' in log_entry[-1]):
                     if((sim_user_of_interest=="SimUser003") and (timezone == "CEST")):
                         # in recording setup SimUser003 has a different java version than the rest of the simulation users by default -> bug in simulation environment
-                        quality_check_programming_behavior_java(execute_sim23_class_file_object_name='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\server\\jvm.dll', execute_sim23_class_file_process_name='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\java.exe', compile_create_class_file_process_name='C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\javac.exe', sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], wal_dataframe=data, start_timestamp_programming_behavior=log_entry[0], end_timestamp_programming_behavior=log_entry[1], logging_file_path=logging_path)
+                        quality_check_programming_behavior_java(execute_sim23_class_file_object_name = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\server\\jvm.dll', execute_sim23_class_file_process_name = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\java.exe', compile_create_class_file_process_name = 'C:\\Users\\'+SIM_USER_DUMMY_TAG+'\\scoop\\apps\\openjdk\\21.0.2-13\\bin\\javac.exe', sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], wal_dataframe = data, start_timestamp_programming_behavior = log_entry[0], end_timestamp_programming_behavior = log_entry[1], logging_file_path = logging_path)
                     else:
-                        quality_check_programming_behavior_java(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], wal_dataframe=data, start_timestamp_programming_behavior=log_entry[0], end_timestamp_programming_behavior=log_entry[1], logging_file_path=logging_path)
-                    # update count of done quality checks
+                        quality_check_programming_behavior_java(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], wal_dataframe = data, start_timestamp_programming_behavior = log_entry[0], end_timestamp_programming_behavior = log_entry[1], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
                 elif('python' in log_entry[-1]):
-                    quality_check_programming_behavior_python(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], wal_dataframe=data, start_timestamp_programming_behavior=log_entry[0], end_timestamp_programming_behavior=log_entry[1], logging_file_path=logging_path)
-                    # update count of done quality checks
+                    quality_check_programming_behavior_python(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], wal_dataframe = data, start_timestamp_programming_behavior = log_entry[0], end_timestamp_programming_behavior = log_entry[1], logging_file_path = logging_path)
                     done_quality_checks = done_quality_checks + 1
             elif('copy' in log_entry[-1]):
-                quality_check_copy_local_to_local_and_net_to_local(sim_user_of_interest=sim_user_of_interest, sim23_log_behavior_label= log_entry[-1], complete_copy_behavior_object_name=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], number_of_files_to_copy=LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1], wal_dataframe=data, start_time_copy_behavior=log_entry[0], end_time_copy_behavior=log_entry[1], logging_file_path=logging_path)
-                # update count of done quality checks
+                quality_check_copy_local_to_local_and_net_to_local(sim_user_of_interest = sim_user_of_interest, sim23_log_behavior_label = log_entry[-1], complete_copy_behavior_object_name = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][0], number_of_files_to_copy = LABEL_WAL_FEATURE_MAPPING[log_entry[-1]][1], wal_dataframe = data, start_time_copy_behavior = log_entry[0], end_time_copy_behavior = log_entry[1], logging_file_path = logging_path)
                 done_quality_checks = done_quality_checks + 1
 
     return done_quality_checks
@@ -890,9 +875,8 @@ def main():
 
 if __name__ == "__main__":
     if(CMD_MODE_ENABLED):
-        parser = argparse.ArgumentParser(prog=NAME,
-            formatter_class=argparse.RawDescriptionHelpFormatter,
-            description=textwrap.dedent(('''
+        parser = argparse.ArgumentParser(prog = NAME, formatter_class = argparse.RawDescriptionHelpFormatter, description = textwrap.dedent(('''
+        This script is called by main experiment scripts (starting with 'wsal_') on highest hierachy of this repository structure.
         ---------------------------------------------------------------
         Name: %s
         Version: %s
