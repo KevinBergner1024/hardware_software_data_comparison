@@ -37,7 +37,7 @@ def load_config_asset(config_section: str, config_key: str, config_system_path: 
     return config_key_value
 
 def automated_quality_check_windows_security_audit_logs(simulation_run_system_folder_path: pathlib.Path, folder_path_to_log_quality_evaluation_results: pathlib.Path = None, archived_wal_substring: str = "Archive-Security",
-                            next_simulation_run_system_folder_path: pathlib.Path = None, sim23_logs_file_name: str = "sim23.log", sim_user_of_interest: str = None, timezone_of_simulation_run: str = "CET"):
+                                                        next_simulation_run_system_folder_path: pathlib.Path = None, sim23_logs_file_name: str = "sim23.log", sim_user_of_interest: str = None, timezone_of_simulation_run: str = "CET"):
     """automated quality check for specific simulation run (hardware or software data) for specified Windows 10 user client
 
     Args:
