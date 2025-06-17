@@ -13,17 +13,18 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 
+
 NAME = "WSAL CLASSIFICATION MACHINE LEARNING MODELS SCRIPT"
 VERSION = "1.4"
 CMD_MODE_ENABLED = True
 
 SUPERVISED_MODELS = {
-                    'Bagging-KNN' : BaggingClassifier(KNeighborsClassifier(n_neighbors = 3, n_jobs = 1), n_estimators = 10, max_samples =  1000, n_jobs = 1),
+                    'KNN' : KNeighborsClassifier(n_neighbors=5, n_jobs=1),
                     'DTree' : DecisionTreeClassifier(),
-                    'RF' : RandomForestClassifier(n_jobs = 1),
-                    'Bagging-SVM':  BaggingClassifier(SVC(C= 0.5), n_estimators = 10, max_samples = 1000, n_jobs = 1),
-                    'MLP':  MLPClassifier(alpha = 0.0001, max_iter = 50, random_state = 42),
-                    'XGBoost': xgb.XGBClassifier(n_jobs = 1),
+                    'RF' : RandomForestClassifier(n_jobs=1),
+                    'SVM' : SVC(),
+                    'MLP':  MLPClassifier(alpha=0.0001, random_state=42, early_stopping=True),
+                    'XGBoost': xgb.XGBClassifier(n_jobs=1),
                     }
 
 def evaluate_model(X_train: np.array, X_test: np.array, y_train: np.array, y_test: np.array, encoding_name: str, data_set_name: str, path_to_store_results: pathlib.Path, models: dict = SUPERVISED_MODELS):

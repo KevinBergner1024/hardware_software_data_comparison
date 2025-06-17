@@ -8,8 +8,7 @@ import resource
 
 from machine_learning import classification_ml_wsal
 from machine_learning import encodings_wsal
-from process_wal import process_wal
-from sklearn.preprocessing import LabelEncoder, StandardScaler, MinMaxScaler
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.model_selection import train_test_split
 
 NAME = "WSAL MAIN MACHINE LEARNING SCRIPT"
@@ -422,7 +421,7 @@ if __name__ == "__main__":
         Name: %s
         Version: %s
         ---------------------------------------------------------------
-        Usage:
+        Usage: 
         ''')%(NAME, VERSION)))
         
         parser.add_argument('system_path_gzip_folder_hardware_sim', type = str, help = "system path which includes compressed (gzip) Windows 10 security audit log files for hardware simulation (type:str) (e.g., /home/path/to/hardware_data)")
@@ -433,7 +432,7 @@ if __name__ == "__main__":
         parser.add_argument('time_window_size_event_grouping', type = str, help = "size of time windows for event grouping in seconds (type:str) (e.g., s, 2s, 3s)")
         parser.add_argument('max_ram_usage', type = int, help = "define max ram usage of this script in bytes")
         parser.add_argument('system_path_to_save_encoded_data', type = str, help = "save  values: system path, to store encoded data | skip_saving_encoding, to not save encoded data")
-        parser.add_argument('load_pre_encoded_dummy_data', type=str, help="load pre-encoded dummy data prepared by paper authors | start loading if value is: load_dummy_data ; skip loading if value is: dont_load_dummy_data (type:str)")
+        parser.add_argument('load_pre_encoded_dummy_data', type = str, help = "load pre-encoded dummy data prepared by paper authors | start loading if value is: load_dummy_data ; skip loading if value is: dont_load_dummy_data (type:str)")
         args = parser.parse_args()
         system_path_gzip_folder_hardware_sim_cmd = args.system_path_gzip_folder_hardware_sim
         system_path_gzip_folder_software_sim_cmd = args.system_path_gzip_folder_software_sim
