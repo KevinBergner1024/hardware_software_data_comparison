@@ -421,7 +421,8 @@ if __name__ == "__main__":
         Name: %s
         Version: %s
         ---------------------------------------------------------------
-        Usage: 
+        Usage: python wsal_machine_learning_script.py /home//hardware_data/ /home/software_data/ /home/ml_results/ SimUser001 general_label_mode s 253403070464 /home/encoded_data/ load_dummy_data; 
+               python wsal_machine_learning_script.py /home//hardware_data/ /home/software_data/ /home/ml_results/ SimUser001 general_label_mode s 253403070464 /home/encoded_data/ dont_load_dummy_data;
         ''')%(NAME, VERSION)))
         
         parser.add_argument('system_path_gzip_folder_hardware_sim', type = str, help = "system path which includes compressed (gzip) Windows 10 security audit log files for hardware simulation (type:str) (e.g., /home/path/to/hardware_data)")
