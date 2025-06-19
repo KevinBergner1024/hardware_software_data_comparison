@@ -2,24 +2,25 @@ import pathlib
 import pandas as pd
 import os
 import scipy
+import scipy.stats
 import argparse
 import textwrap
 import resource
 
 CMD_MODE_ENABLED = True
-NAME = "compute wasserstein distance for event ids for two specific data sets (all 5 runs included for each data set for specific simulation user)"
+NAME = "WASSERSTEIN DISTANCE COMPUTATION ITERATION-WISE"
 VERSION = "1.0"
 
-def compute_wasserstein_distance(data_set_one:pd.DataFrame, data_set_two:pd.DataFrame, normalization:bool=True):
+def compute_wasserstein_distance(data_set_one: pd.DataFrame, data_set_two: pd.DataFrame, normalization: bool = True):
     """ compute 1-dimensional wasserstein distance for two sub data sets
 
     Args:
-        data_set_one (pd.DataFrame): data set one
-        data_set_two (pd.DataFrame): data set two
-        normalization (bool, optional): value to decide if value counts should be normalized first before computing wasserstein distance. Defaults to True.
+        data_set_one (pd.DataFrame): simulation Windows 10 client user specific data of single iteration recording
+        data_set_two (pd.DataFrame): simulation Windows 10 client user specific data of single iteration recording
+        normalization (bool): value to decide if value frequency counts should be normalized first before computing Wasserstein distance (based on proportion). Defaults to True.
 
     Returns:
-        float: wasserstein distance
+        float: Wasserstein distance
     """
     value_count_first_data_set = data_set_one.value_counts(normalize=normalization)
     value_count_second_data_set = data_set_two.value_counts(normalize=normalization)
@@ -32,11 +33,16 @@ def compute_wasserstein_distance(data_set_one:pd.DataFrame, data_set_two:pd.Data
 
     return ws_distance
 
-def limit_memory(maxsize): 
+def limit_memory(maxsize: int): 
+    """set limit of RAM to use (works only with Linux)
+
+    Args:
+        maxsize (int): max RAM usage in bytes
+    """
     soft, hard = resource.getrlimit(resource.RLIMIT_AS)
     resource.setrlimit(resource.RLIMIT_AS, (maxsize, hard))
 
-def main(sim_user_of_interest_first_data_set:str, system_path_to_first_data_set:str, sim_user_of_interest_second_data_set:str, system_path_to_second_data_set:str, max_ram_usage_bytes:int, system_path_to_store_results:str):
+def main(sim_user_of_interest_first_data_set: str, system_path_to_first_data_set: str, sim_user_of_interest_second_data_set: str, system_path_to_second_data_set: str, max_ram_usage_bytes: int, system_path_to_store_results: str):
 
     limit_memory(max_ram_usage_bytes)
     
@@ -48,7 +54,7 @@ def main(sim_user_of_interest_first_data_set:str, system_path_to_first_data_set:
     first_data_set_file_names = [entry[2] for entry in os.walk(system_path_to_first_data_set)][0]
     second_data_set_file_names = [entry[2] for entry in os.walk(system_path_to_second_data_set)][0]
 
-    # get specific hardware and software simulation data files, each 30 iterations
+    # get Windows 10 client user specific 30 iteration files
     first_data_set_sim_user_iterations_file_names = [file for file in first_data_set_file_names if(sim_user_of_interest_first_data_set in file)]
     second_data_set_sim_user_iterations_file_names = [file for file in second_data_set_file_names if(sim_user_of_interest_second_data_set in file)]
 
@@ -85,10 +91,9 @@ def main(sim_user_of_interest_first_data_set:str, system_path_to_first_data_set:
 
 if __name__ == "__main__":
     if(CMD_MODE_ENABLED):
-        parser = argparse.ArgumentParser(prog=NAME,
-            formatter_class=argparse.RawDescriptionHelpFormatter,
-            description=textwrap.dedent(('''
-        
+        parser = argparse.ArgumentParser(prog = NAME, formatter_class = argparse.RawDescriptionHelpFormatter, description = textwrap.dedent(('''
+        This script is used to compare Wassterstein Distances between two
+        Windows 10 simulation user clients iteration-wise. 
         ---------------------------------------------------------------
         Name: %s
         Version: %s
@@ -96,12 +101,12 @@ if __name__ == "__main__":
         Usage:
         ''')%(NAME, VERSION)))
 
-        parser.add_argument('sim_user_of_interest_first_data_set', type=str, help="")
-        parser.add_argument('system_path_to_first_data_set', type=str, help="")
-        parser.add_argument('sim_user_of_interest_second_data_set', type=str, help="")
-        parser.add_argument('system_path_to_second_data_set', type=str, help="")
-        parser.add_argument('max_ram_usage_bytes', type=int, help="")
-        parser.add_argument('system_path_to_store_results', type=str, help="")
+        parser.add_argument('sim_user_of_interest_first_data_set', type = str, help = "first Windows 10 simulation client of interest (e.g., SimUser001)")
+        parser.add_argument('system_path_to_first_data_set', type = str, help = "system path containing Windows 10 security audit logs in GZIP compressed CSV format")
+        parser.add_argument('sim_user_of_interest_second_data_set', type = str, help = "second Windows 10 simulation client of interest (e.g., SimUser004)")
+        parser.add_argument('system_path_to_second_data_set', type = str, help = "system path containing Windows 10 security audit logs in GZIP compressed CSV format")
+        parser.add_argument('max_ram_usage_bytes', type = int, help = "define max ram usage of this script in bytes")
+        parser.add_argument('system_path_to_store_results', type = str, help = "system path used to store Wasserstein distance computation results (e.g., /home/results/wasserstein_distances/)")
 
         args = parser.parse_args()
         sim_user_of_interest_first_data_set_cmd = args.sim_user_of_interest_first_data_set
@@ -111,7 +116,7 @@ if __name__ == "__main__":
         max_ram_usage_bytes_cmd = args.max_ram_usage_bytes
         system_path_to_store_results_cmd = args.system_path_to_store_results
 
-        return_code = main(sim_user_of_interest_first_data_set=sim_user_of_interest_first_data_set_cmd, system_path_to_first_data_set=system_path_to_first_data_set_cmd, sim_user_of_interest_second_data_set=sim_user_of_interest_second_data_set_cmd, system_path_to_second_data_set=system_path_to_second_data_set_cmd, max_ram_usage_bytes=max_ram_usage_bytes_cmd, system_path_to_store_results=system_path_to_store_results_cmd)
+        return_code = main(sim_user_of_interest_first_data_set = sim_user_of_interest_first_data_set_cmd, system_path_to_first_data_set = system_path_to_first_data_set_cmd, sim_user_of_interest_second_data_set = sim_user_of_interest_second_data_set_cmd, system_path_to_second_data_set = system_path_to_second_data_set_cmd, max_ram_usage_bytes = max_ram_usage_bytes_cmd, system_path_to_store_results = system_path_to_store_results_cmd)
         quit(return_code)
     else:
         main(None, None, None, None, None)
