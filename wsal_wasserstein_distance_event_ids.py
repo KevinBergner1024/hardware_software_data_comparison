@@ -98,7 +98,7 @@ if __name__ == "__main__":
         Name: %s
         Version: %s
         ---------------------------------------------------------------
-        Usage:
+        Usage: python wsal_wasserstein_distance_event_ids.py SimUser001 /home/path/to/data_files/first/ SimUser003 /home/path/to/data_files/second/ 53687091200 /home/results/wasserstein_distances/experiment/;
         ''')%(NAME, VERSION)))
 
         parser.add_argument('sim_user_of_interest_first_data_set', type = str, help = "first Windows 10 simulation client of interest (e.g., SimUser001)")
