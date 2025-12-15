@@ -15,8 +15,8 @@ VERSION = "1.0.0"
 
 DEFAULT_LOG_FILE = None
 DEFAULT_DATE_LOG_FORMAT = "%Y-%m-%d %H:%M:%S"
-HARDWARE_SIM_DEFAULT_LOG_FILE:pathlib.Path = pathlib.Path("/home/stack/repos/gitlab/machine_learning_repository/host_data/cidds_sim_bsi_paper_data_set/uniform_col_log/hardware_sim_uniform_col.log")
-SOFTWARE_SIM_DEFAULT_LOG_FILE:pathlib.Path = pathlib.Path("/home/stack/repos/gitlab/machine_learning_repository/host_data/cidds_sim_bsi_paper_data_set/uniform_col_log/software_sim_uniform_col.log")
+HARDWARE_SIM_DEFAULT_LOG_FILE:pathlib.Path = pathlib.Path("")
+SOFTWARE_SIM_DEFAULT_LOG_FILE:pathlib.Path = pathlib.Path("")
 DEFAULT_LOG_FILE_LEVEL:int = logging.DEBUG
 DEFAULT_LOG_FILE_FORMAT:str = '[%(asctime)s.%(msecs)6d][%(levelname)s] %(message)s'
 DEFAULT_LOG_CONSOLE_LEVEL:int = logging.DEBUG
