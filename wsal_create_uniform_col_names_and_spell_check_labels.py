@@ -53,12 +53,12 @@ def create_logger(log_console_level:int=DEFAULT_LOG_CONSOLE_LEVEL, log_console_f
     return logger
 
 
-def load_windows_security_auditing_logs_for_simuser_run(os_path_simuser_run: pathlib.Path, limited_rows: bool = False):
+def load_windows_security_auditing_logs_for_simuser_iteration(os_path_simuser_iteration: pathlib.Path, limited_rows: bool = False):
     
     if(limited_rows):
-        wsal_df = pd.read_csv(pathlib.Path(os_path_simuser_run), dtype="string", nrows=1000, compression='gzip')
+        wsal_df = pd.read_csv(pathlib.Path(os_path_simuser_iteration), dtype="string", nrows=1000, compression='gzip')
     else:
-        wsal_df = pd.read_csv(pathlib.Path(os_path_simuser_run), dtype="string", compression='gzip')
+        wsal_df = pd.read_csv(pathlib.Path(os_path_simuser_iteration), dtype="string", compression='gzip')
 
     wsal_df["SYSTEM_TimeCreated"] = pd.to_datetime(wsal_df["SYSTEM_TimeCreated"]).dt.tz_localize(None)
     wsal_df.sort_values(by=["SYSTEM_TimeCreated"], inplace=True)
@@ -89,7 +89,7 @@ def get_uniform_column_values_and_event_ids_for_parsed_windows_security_audit_lo
         for sub_path in folder_path.iterdir():
             if((sub_path.is_file()) & (".gz" in str(sub_path))):
 
-                loaded_wsal_sub_data_set = load_windows_security_auditing_logs_for_simuser_run(os_path_simuser_run = sub_path, limited_rows= True)
+                loaded_wsal_sub_data_set = load_windows_security_auditing_logs_for_simuser_iteration(os_path_simuser_iteration = sub_path, limited_rows= True)
                 column_names_sub_data_set = list(loaded_wsal_sub_data_set.columns.values)
 
                 # get column names
@@ -121,7 +121,7 @@ def apply_uniform_column_names_to_sub_data_set_samples_and_save_data_in_gzip_for
         bar.update(counter)
         for sub_path in folder_path_to_load_processed_sub_data_sets.iterdir():
             if((sub_path.is_file()) & (".gz" in str(sub_path))):
-                loaded_wsal_sub_data_set = load_windows_security_auditing_logs_for_simuser_run(os_path_simuser_run = sub_path)
+                loaded_wsal_sub_data_set = load_windows_security_auditing_logs_for_simuser_iteration(os_path_simuser_iteration = sub_path)
 
                 column_names_sub_data_set = list(loaded_wsal_sub_data_set.columns.values)
                 
